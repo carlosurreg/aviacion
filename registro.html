@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Registro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Favicon-->
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+	     <!-- conexion con los iconos y cambio de letra icons -->
+		 <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="estilologin.css">
+
+	</head>
+
+    <head>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/logo.jpg" alt="logo" class="img-fluid" width="30" height="24"> Aviación
+              </a>
+      
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  </li>
+                  
+                  
+                </ul>         
+              </div>
+            </div>
+          </nav>
+    </head>
+	<body class="img js-fullheight" style="background-image: url(./img/cieloavion.jpg);">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Amantes de la Aviación</h2>
+				</div>
+			</div>
+			<form id="mensajeinformativo">
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	
+		      	<form class="signin-form"  method="post" action="#">
+		      		<div class="form-group">
+		      			<input type="email" class="form-control" placeholder="Email" required id="email">
+		      		</div>
+	            <div class="form-group">
+	              <input  type="password" class="form-control" placeholder="Password" required id="password">
+	            </div>
+	            <div class="form-group">
+	            	<button type="submit" class="form-control btn btn-dark submit px-3" id="botonregistro" >Registrarse</button>
+	            </div>
+	            
+	          </form>
+			</form>
+	          
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<!-- Modal -->
+		<div class="modal fade" id="mensajeinformativo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			  </div>
+			  <div class="modal-body">
+				<p id="mensajemodalinfo"></p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </section>
+
+	<script src="js/firebase.js" type="module"></script>
+	<script src="js/registro.js" type="module"></script>
+	
+
+	</body>
+</html>
